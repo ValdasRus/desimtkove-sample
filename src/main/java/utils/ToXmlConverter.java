@@ -38,13 +38,13 @@ public class ToXmlConverter {
         StreamResult consoleResult = new StreamResult(System.out);
         transformer.transform(source, consoleResult);
 
-        System.out.println("Jusu failas issaugotas " + System.getProperty("user.home") + " kataloge");
+        System.out.println("File saved to " + System.getProperty("user.home") + " directory");
     }
 
 
     public String getNameAndDir() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Suveskite naujo xml failo pavadinima:");
+        System.out.println("Enter name for new XML document:");
         String name = scan.nextLine();
         return System.getProperty("user.home") + "/" + name + ".xml";
     }

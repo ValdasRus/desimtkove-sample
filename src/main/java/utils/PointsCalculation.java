@@ -103,7 +103,7 @@ public class PointsCalculation {
             if (athlete.getTotalPoints() <= maxPoints) {
                 athleteList.add(athlete);
             } else {
-                System.out.println("Klaidingi failo duomenys");
+                System.out.println("Wrong file data data");
             }
 
             athleteList.sort(new SortingUtil());

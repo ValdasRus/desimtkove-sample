@@ -19,15 +19,15 @@ public class Init {
             }
             pointsCalculation.athleteCalc(a);
         } catch (FileNotFoundException e) {
-            System.out.println("Toks failas nerastas");
+            System.out.println("No file found");
         }
     }
 
     public String getFileName() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Suveskite failo pavadinima:");
+        System.out.println("Enter file name without extension:");
         String name = scan.nextLine();
-        System.out.println("suveskite pletini:");
+        System.out.println("Enter file extension:");
         String extension =  scan.nextLine();
         return name + "." + extension;
     }
